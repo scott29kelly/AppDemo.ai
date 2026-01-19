@@ -1,0 +1,29 @@
+{
+  "name": "@appdemo/worker",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint src/",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@appdemo/analysis": "workspace:*",
+    "@appdemo/database": "workspace:*",
+    "@appdemo/recording": "workspace:*",
+    "@appdemo/rendering": "workspace:*",
+    "@appdemo/types": "workspace:*",
+    "bullmq": "^5.1.0"
+  },
+  "devDependencies": {
+    "@appdemo/eslint-config": "workspace:*",
+    "@appdemo/typescript-config": "workspace:*",
+    "eslint": "^8.56.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  }
+}

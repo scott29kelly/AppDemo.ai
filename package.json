@@ -1,0 +1,35 @@
+{
+  "name": "appdemo-ai",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "dev:web": "turbo dev --filter=@appdemo/web",
+    "dev:worker": "turbo dev --filter=@appdemo/worker",
+    "lint": "turbo lint",
+    "lint:fix": "turbo lint -- --fix",
+    "type-check": "turbo type-check",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "db:generate": "pnpm --filter @appdemo/database db:generate",
+    "db:push": "pnpm --filter @appdemo/database db:push",
+    "db:migrate": "pnpm --filter @appdemo/database db:migrate",
+    "db:studio": "pnpm --filter @appdemo/database db:studio",
+    "db:seed": "pnpm --filter @appdemo/database db:seed",
+    "clean": "turbo clean && rm -rf node_modules",
+    "test": "turbo test"
+  },
+  "devDependencies": {
+    "@appdemo/eslint-config": "workspace:*",
+    "@appdemo/typescript-config": "workspace:*",
+    "@types/node": "^20.11.0",
+    "prettier": "^3.2.4",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "turbo": "^2.3.0",
+    "typescript": "^5.3.3"
+  },
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

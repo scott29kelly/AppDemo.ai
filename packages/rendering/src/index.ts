@@ -1,0 +1,1 @@
+export { renderDemo } from "./compositor";
