@@ -1,1 +1,1 @@
-export { renderDemo } from "./compositor";
+export { renderDemo, DemoCompositor } from "./compositor";

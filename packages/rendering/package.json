@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "@appdemo/types": "workspace:*",
+    "elevenlabs": "^1.0.0",
     "fluent-ffmpeg": "^2.1.2"
   },
   "devDependencies": {

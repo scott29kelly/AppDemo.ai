@@ -1,2 +1,3 @@
-export { recordDemo } from "./recorder";
-export { DemoOverlay, OVERLAY_SCRIPT } from "./overlay-system";
+export { recordDemo, DemoRecorder } from "./recorder";
+export { DemoOverlay, OVERLAY_SCRIPT, getOverlayMethod } from "./overlay-system";
+export type { OverlayCommand } from "./overlay-system";
